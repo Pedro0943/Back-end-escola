@@ -1,0 +1,10 @@
+INSERT INTO tb_aluno (nome, idade, email) VALUES ('João Silva', 20, 'joaosilva@gmail.com');
+INSERT INTO tb_aluno (nome, idade, email) VALUES ('Maria Souza', 22, 'mariasouza@gmail.com');
+INSERT INTO tb_aluno (nome, idade, email) VALUES ('Carlos Oliveira', 19, 'carlosoliveira@gmail.com');
+INSERT INTO tb_aluno (nome, idade, email) VALUES ('Ana Lima', 21, 'analima@gmail.com');
+INSERT INTO tb_aluno (nome, idade, email) VALUES ('Pedro Santos', 23, 'pedrosantos@gmail.com');
+INSERT INTO tb_aluno (nome, idade, email) VALUES ('Juliana Rocha', 20, 'julianarocha@gmail.com');
+INSERT INTO tb_aluno (nome, idade, email) VALUES ('Fernando Alves', 22, 'fernandoalves@gmail.com');
+INSERT INTO tb_aluno (nome, idade, email) VALUES ('Larissa Mendes', 19, 'larissamendes@gmail.com');
+INSERT INTO tb_aluno (nome, idade, email) VALUES ('Ricardo Duarte', 24, 'ricardoduarte@gmail.com');
+INSERT INTO tb_aluno (nome, idade, email) VALUES ('Camila Ferreira', 21, 'camilaferreria@gmail.com');
