@@ -8,3 +8,30 @@ INSERT INTO tb_aluno (nome, idade, email, data_Nasc, cpf, img_Url) VALUES ('Fern
 INSERT INTO tb_aluno (nome, idade, email, data_Nasc, cpf, img_Url) VALUES ('Larissa Mendes', 19, 'larissamendes@gmail.com', '2004-06-08', '890.123.456-77', 'https://raw.githubusercontent.com/devsuperior/java-spring-dslist/main/resources/8.png');
 INSERT INTO tb_aluno (nome, idade, email, data_Nasc, cpf, img_Url) VALUES ('Ricardo Duarte', 24, 'ricardoduarte@gmail.com', '1999-01-17', '901.234.567-88', 'https://raw.githubusercontent.com/devsuperior/java-spring-dslist/main/resources/9.png');
 INSERT INTO tb_aluno (nome, idade, email, data_Nasc, cpf, img_Url) VALUES ('Camila Ferreira', 21, 'camilaferreria@gmail.com', '2002-04-05', '012.345.678-99', 'https://raw.githubusercontent.com/devsuperior/java-spring-dslist/main/resources/10.png');
+
+INSERT INTO tb_formacao_list (nome) VALUES ('Profissionalizante');
+INSERT INTO tb_formacao_list (nome) VALUES ('Ensino Superior');
+
+INSERT INTO tb_formacao (nome, nivel, long_description, short_description, score, img_Url) VALUES ('Técnico em Informática', 'Profissionalizante', 'Curso voltado para desenvolvimento de software, redes de computadores e manutenção de sistemas computacionais, proporcionando conhecimento técnico para o mercado de trabalho.', 'Aprenda redes, software e manutenção de computadores para o mercado de TI.', 4.5, 'https://raw.githubusercontent.com/devsuperior/java-spring-dslist/main/resources/1.png');
+INSERT INTO tb_formacao (nome, nivel, long_description, short_description, score, img_Url) VALUES ('Técnico em Administração', 'Profissionalizante', 'Capacitação para gestão administrativa, planejamento estratégico e operação de empresas, com ênfase em práticas organizacionais e empresariais.', 'Formação prática para atuar na gestão e operação de empresas.', 4.2, 'https://raw.githubusercontent.com/devsuperior/java-spring-dslist/main/resources/2.png');
+INSERT INTO tb_formacao (nome, nivel, long_description, short_description, score, img_Url) VALUES ('Técnico em Enfermagem', 'Profissionalizante', 'Formação técnica para assistência em saúde, cuidados hospitalares e suporte a profissionais médicos em diversas especialidades.', 'Capacitação em cuidados de saúde e assistência hospitalar.', 4.7, 'https://raw.githubusercontent.com/devsuperior/java-spring-dslist/main/resources/3.png');
+INSERT INTO tb_formacao (nome, nivel, long_description, short_description, score, img_Url) VALUES ('Técnico em Mecânica', 'Profissionalizante', 'Curso focado em processos industriais, manutenção de máquinas e equipamentos mecânicos, com aplicação prática na indústria.', 'Conhecimentos essenciais em manutenção e processos industriais.', 4.3, 'https://raw.githubusercontent.com/devsuperior/java-spring-dslist/main/resources/4.png');
+INSERT INTO tb_formacao (nome, nivel, long_description, short_description, score, img_Url) VALUES ('Técnico em Eletrônica', 'Profissionalizante', 'Ensino técnico voltado para circuitos elétricos, manutenção de dispositivos eletrônicos e automação de sistemas.', 'Curso técnico em circuitos, manutenção e automação eletrônica.', 4.6, 'https://raw.githubusercontent.com/devsuperior/java-spring-dslist/main/resources/5.png');
+
+INSERT INTO tb_formacao (nome, nivel, long_description, short_description, score, img_Url) VALUES ('Engenharia da Computação', 'Ensino Superior', 'Graduação que une conceitos de computação e engenharia elétrica para o desenvolvimento de hardware e software de alto desempenho.', 'Desenvolvimento de hardware e software para soluções tecnológicas.', 4.8, 'https://raw.githubusercontent.com/devsuperior/java-spring-dslist/main/resources/6.png');
+INSERT INTO tb_formacao (nome, nivel, long_description, short_description, score, img_Url) VALUES ('Administração de Empresas', 'Ensino Superior', 'Curso superior que prepara profissionais para gestão empresarial, análise financeira, marketing e recursos humanos.', 'Gestão estratégica e organização empresarial para líderes do futuro.', 4.4, 'https://raw.githubusercontent.com/devsuperior/java-spring-dslist/main/resources/7.png');
+INSERT INTO tb_formacao (nome, nivel, long_description, short_description, score, img_Url) VALUES ('Medicina', 'Ensino Superior', 'Graduação em ciências médicas para formação de profissionais da saúde, capacitando-os para diagnóstico e tratamento de doenças.', 'Formação completa para diagnóstico e tratamento de doenças.', 4.9, 'https://raw.githubusercontent.com/devsuperior/java-spring-dslist/main/resources/8.png');
+INSERT INTO tb_formacao (nome, nivel, long_description, short_description, score, img_Url) VALUES ('Direito', 'Ensino Superior', 'Curso voltado para o estudo das leis, justiça e sistema jurídico, preparando profissionais para atuação como advogados, juízes e promotores.', 'Estudo das leis e da justiça para atuação no sistema jurídico.', 4.3, 'https://raw.githubusercontent.com/devsuperior/java-spring-dslist/main/resources/9.png');
+INSERT INTO tb_formacao (nome, nivel, long_description, short_description, score, img_Url) VALUES ('Engenharia Civil', 'Ensino Superior', 'Formação em construção civil, infraestrutura e projetos estruturais, preparando engenheiros para o desenvolvimento de obras e edificações.', 'Projetos e construções para infraestrutura e desenvolvimento urbano.', 4.5, 'https://raw.githubusercontent.com/devsuperior/java-spring-dslist/main/resources/10.png');
+
+INSERT INTO tb_belonging (list_id, formacao_id, position) VALUES (1, 1, 0);
+INSERT INTO tb_belonging (list_id, formacao_id, position) VALUES (1, 2, 1);
+INSERT INTO tb_belonging (list_id, formacao_id, position) VALUES (1, 3, 2);
+INSERT INTO tb_belonging (list_id, formacao_id, position) VALUES (1, 4, 3);
+INSERT INTO tb_belonging (list_id, formacao_id, position) VALUES (1, 5, 4);
+
+INSERT INTO tb_belonging (list_id, formacao_id, position) VALUES (2, 6, 0);
+INSERT INTO tb_belonging (list_id, formacao_id, position) VALUES (2, 7, 1);
+INSERT INTO tb_belonging (list_id, formacao_id, position) VALUES (2, 8, 2);
+INSERT INTO tb_belonging (list_id, formacao_id, position) VALUES (2, 9, 3);
+INSERT INTO tb_belonging (list_id, formacao_id, position) VALUES (2, 10, 4);

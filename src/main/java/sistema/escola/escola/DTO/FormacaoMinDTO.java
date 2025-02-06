@@ -1,27 +1,24 @@
 package sistema.escola.escola.dto;
 
-import sistema.escola.escola.entities.Aluno;
+import sistema.escola.escola.entities.Formacao;
 
-public class AlunoMinDTO {
+public class FormacaoMinDTO {
 	
 	private Long id;
 	private String nome;
-	private String dataNasc;
 	private String imgUrl;
-	private String cpf;
+	private String shortDescription;
 	
-	public AlunoMinDTO() {
+	public FormacaoMinDTO() {
 		
 	}
-	
-	public AlunoMinDTO(Aluno entity) {
+
+	public FormacaoMinDTO(Formacao entity) {
 		
 		id = entity.getId();
 		nome = entity.getNome();
-		dataNasc = entity.getDataNasc();
 		imgUrl = entity.getImgUrl();
-		cpf = entity.getCpf();
-		
+		shortDescription = entity.getShortDescription();
 	}
 
 	public Long getId() {
@@ -32,17 +29,14 @@ public class AlunoMinDTO {
 		return nome;
 	}
 
-	public String getDataNasc() {
-		return dataNasc;
-	}
-
 	public String getImgUrl() {
 		return imgUrl;
 	}
 
-	public String getCpf() {
-		return cpf;
+	public String getShortDescription() {
+		return shortDescription;
 	}
+	
 	
 	
 }

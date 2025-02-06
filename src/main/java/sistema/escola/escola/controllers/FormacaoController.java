@@ -7,20 +7,19 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import sistema.escola.escola.dto.AlunoMinDTO;
-import sistema.escola.escola.services.AlunoService;
+import sistema.escola.escola.dto.FormacaoMinDTO;
+import sistema.escola.escola.services.FormacaoService;
 
 @RestController
-@RequestMapping(value = "/aluno")
-public class AlunoController {
-	
-	@Autowired
-	private AlunoService alunoService;
+@RequestMapping(value = "/formacao")
+public class FormacaoController {
 
+	@Autowired
+	private FormacaoService formacaoService;
+	
 	@GetMapping
-	public List<AlunoMinDTO> findAll(){
-		
-		List<AlunoMinDTO> result = alunoService.findAll();
+	public List<FormacaoMinDTO> findAll(){
+		List<FormacaoMinDTO> result = formacaoService.findAll();
 		
 		return result;
 	}
