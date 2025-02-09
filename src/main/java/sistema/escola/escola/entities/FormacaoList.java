@@ -8,6 +8,8 @@ import jakarta.persistence.*;
 @Table(name = "tb_formacao_list")
 public class FormacaoList {
 
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	private String nome;
 	
